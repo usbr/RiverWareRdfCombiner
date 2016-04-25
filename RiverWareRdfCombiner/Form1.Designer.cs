@@ -42,6 +42,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.listBoxRDF1 = new System.Windows.Forms.ListBox();
+            this.listBoxRDF2 = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -89,9 +93,9 @@
             // combineButton
             // 
             this.combineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combineButton.Location = new System.Drawing.Point(405, 186);
+            this.combineButton.Location = new System.Drawing.Point(416, 324);
             this.combineButton.Name = "combineButton";
-            this.combineButton.Size = new System.Drawing.Size(86, 32);
+            this.combineButton.Size = new System.Drawing.Size(79, 42);
             this.combineButton.TabIndex = 4;
             this.combineButton.Text = "Combine";
             this.combineButton.UseVisualStyleBackColor = true;
@@ -166,11 +170,51 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "dates and time steps will result in improper processing by these software.";
             // 
+            // listBoxRDF1
+            // 
+            this.listBoxRDF1.FormattingEnabled = true;
+            this.listBoxRDF1.Location = new System.Drawing.Point(4, 206);
+            this.listBoxRDF1.Name = "listBoxRDF1";
+            this.listBoxRDF1.Size = new System.Drawing.Size(200, 160);
+            this.listBoxRDF1.TabIndex = 12;
+            // 
+            // listBoxRDF2
+            // 
+            this.listBoxRDF2.FormattingEnabled = true;
+            this.listBoxRDF2.Location = new System.Drawing.Point(210, 206);
+            this.listBoxRDF2.Name = "listBoxRDF2";
+            this.listBoxRDF2.Size = new System.Drawing.Size(200, 160);
+            this.listBoxRDF2.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(1, 188);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(116, 15);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Selected RDF 1 Info";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(207, 188);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(116, 15);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Selected RDF 2 Info";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 222);
+            this.ClientSize = new System.Drawing.Size(499, 372);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.listBoxRDF2);
+            this.Controls.Add(this.listBoxRDF1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -183,6 +227,8 @@
             this.Controls.Add(this.rdfSelected1);
             this.Controls.Add(this.rdf2Button);
             this.Controls.Add(this.rdf1Button);
+            this.MaximumSize = new System.Drawing.Size(515, 410);
+            this.MinimumSize = new System.Drawing.Size(515, 410);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "RiverWare RDF Combiner";
@@ -207,6 +253,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox listBoxRDF1;
+        private System.Windows.Forms.ListBox listBoxRDF2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
